@@ -1,0 +1,33 @@
+################################
+# Test configuration J112 jFET #
+################################
+
+
+
+[PSU1]
+POLARITY = 1
+VSTART = 0
+VEND   = 15
+VSTEP  = 1
+IMAX   = 0.05
+PMAX   = 0.25
+VIDLE  = 7.5
+IIDLE  = 0.02
+
+[PSU2]
+POLARITY = -1
+VSTART = 0.0
+VEND   = 3.5
+VSTEP  = 0.5
+IMAX   = 1
+PMAX   = 1
+VIDLE     = 5.0
+VIDLE_MIN = 0.0
+VIDLE_MAX = 5.0
+IDLE_GM   = -0.01
+IIDLE     = 1
+
+[EXTRA]
+IDLESECS    = 0
+PREHEATSECS = 20
+
