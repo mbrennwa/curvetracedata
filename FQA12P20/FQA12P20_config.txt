@@ -55,10 +55,14 @@ IIDLE  = 1.0
 POLARITY = -1
 
 # Test voltage V2 start:
-VSTART = 4.4
+# VSTART = 4.4
+# VSTART = 4.8
+VSTART = 5.0
 
 # Test voltage V2 end:
-VEND   = 5.1
+# VEND   = 5.1
+# VEND   = 5.5
+VEND   = 5.7
 
 # Test voltage V2 steps:
 VSTEP  = 0.2
