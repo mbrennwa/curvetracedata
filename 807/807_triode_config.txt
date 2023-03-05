@@ -4,8 +4,8 @@
 ####################################################
 
 
-# Connections:
-# - GRID-2   --> ANODE (for triode configuration)
+# Connections (807 AS TRIODE):
+# - GRID-2   --> ANODE (VIA GRID STOPPER RESISTOR)
 # - PSU1-RED --> ANODE
 # - PSU1-BLK --> CATHODE + PSU2-BLK
 # - PUS2-RED --> CATHODE + PSU1-BLK
