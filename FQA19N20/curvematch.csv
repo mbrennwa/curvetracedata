@@ -1,0 +1,14 @@
+
+
+***** curveprocess (pypsucurvetrace)
+***** Extract and calculate parameters from pypsucurvetrace data
+***** Disclaimer: NO WARRANTIES OF ANY KIND! Users are advised to study the code in order to understand how this program works.
+
+
+Filename-1, Sample-1, Filename-2, Sample-2, U1_range_low (V), U1_range_high (V), I1_range_low (A), I1_range_high (A), delta-Vg (V-RMS), delta-Vg mean subtracted (V-RMS)
+FQA19N20_1, FQA19N20_1, FQA19N20_2, FQA19N20_2, 5, 26, 0, 5, 0.03271, 0.007133
+FQA19N20_1, FQA19N20_1, FQA19N20_3, FQA19N20_3, 5, 26, 0, 5, 0.03365, 0.03016
+FQA19N20_1, FQA19N20_1, FQA19N20_4, FQA19N20_4, 5, 26, 0, 5, 0.05355, 0.04444
+FQA19N20_2, FQA19N20_2, FQA19N20_3, FQA19N20_3, 5, 26, 0, 5, 0.03247, 0.02922
+FQA19N20_2, FQA19N20_2, FQA19N20_4, FQA19N20_4, 5, 26, 0, 5, 0.04289, 0.04288
+FQA19N20_3, FQA19N20_3, FQA19N20_4, FQA19N20_4, 5, 26, 0, 5, 0.02199, 0.01607
