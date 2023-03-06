@@ -1,0 +1,24 @@
+% * Sample: LD1014D_445
+% * Date / time: 2022-01-05 09:59:19.554245
+% Column 1:  PSU1 nominal voltage setting (V)
+% Column 2:  PSU1 nominal current setting (A)
+% Column 3:  PSU1 voltage measurement (V)
+% Column 4:  PSU1 current measurement (I)
+% Column 5:  PSU1 limiter flag
+% Column 6:  PSU2 nominal voltage setting (V)
+% Column 7:  PSU2 nominal current setting (A)
+% Column 8:  PSU2 voltage measurement (V)
+% Column 9:  PSU2 current measurement (I)
+% Column 10: PSU2 limiter flag
+% Column 11: Heaterblock temperature (°C)
+% * OPERATING POINT AT END OF PREHEAT / IDLE: U0 = 2.400 V  I0 = 1.495 A  Uc = -1.331 V  Ic = -0.002 A  T = 40.00 °C
+0.000 5.000 0.000 0.060 0 -0.600 -1.000 -0.600 -0.002 0 40.00
+0.500 5.000 0.500 2.872 0 -0.600 -1.000 -0.600 -0.002 0 40.00
+1.000 5.000 1.000 4.727 0 -0.600 -1.000 -0.600 -0.002 0 40.00
+1.500 5.000 1.153 4.915 1 -0.600 -1.000 -0.600 -0.002 0 40.06
+0.000 5.000 0.000 0.006 0 -1.000 -1.000 -1.000 -0.002 0 40.06
+0.500 5.000 0.500 0.539 0 -1.000 -1.000 -1.000 -0.002 0 40.06
+1.000 5.000 1.000 1.526 0 -1.000 -1.000 -1.000 -0.002 0 40.06
+1.500 5.000 1.500 2.678 0 -1.000 -1.000 -1.000 -0.002 0 40.06
+2.000 5.000 2.000 3.898 0 -1.000 -1.000 -1.000 -0.002 0 40.00
+2.500 5.000 2.506 4.947 1 -1.000 -1.000 -1.000 -0.002 0 40.00
