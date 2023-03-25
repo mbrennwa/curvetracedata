@@ -7,5 +7,5 @@ echo Matching curves...
 curvematch data/*.dat --U1range [-5,-45] --I1range [-0.2,-2.5] --nohello > curvematch.csv
 
 echo Plotting curves...
-curveplot data/*.dat --pairs --savepdf --nodisplay --xlabel 'Drain-Source Voltage' --ylabel 'Drain Current' --fontname Arial
+curveplot data/*.dat --pairs --savepdf --nodisplay --xlabel 'Drain-Source Voltage' --ylabel 'Drain Current' --xylimit 60 --fontname Arial
 mv *blue*.pdf plots/
