@@ -1,0 +1,32 @@
+##################################
+# Test configuration 2SK170 jFET #
+##################################
+
+
+
+[PSU1]
+POLARITY = 1
+VSTART = 0
+VEND   = 15
+VSTEP  = 0.5
+IMAX   = 0.15
+PMAX   = 0.4
+VIDLE  = 8
+IIDLE  = 0.005
+
+[PSU2]
+POLARITY = -1
+VSTART = 0.0
+VEND   = 0.5
+VSTEP  = 0.05
+IMAX   = 1
+PMAX   = 1
+VIDLE     = 0.3
+VIDLE_MIN = 0.0
+VIDLE_MAX = 5.0
+IDLE_GM   = -0.02
+IIDLE     = 1
+
+[EXTRA]
+IDLESECS    = 0
+PREHEATSECS = 30
