@@ -7,7 +7,7 @@
 # - PSU1-RED --> DRAIN
 # - PSU1-BLK --> SOURCE + PSU2-RED
 # - PSU2-RED --> PSU1-BLK
-# - PUS2-BLK --> GATE
+# - PSU2-BLK --> GATE
 
 
 #################################################
