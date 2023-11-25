@@ -1,13 +1,15 @@
 #!/bin/bash
 
+files=$(find data/*.dat -type f -not -name "*NA*.dat" | sort)
+
 echo Calculating parameters...
-curveprocess data/*.dat --U1I1 [-20,-1.6] --nohello > parameters.csv
+curveprocess $files --U1I1 [-20,-1.6] --nohello >parameters.csv
 
 echo Matching curves...
-curvematch data/*.dat --U1range [-5,-45] --I1range [-0.2,-2.5] --nohello > curvematch.csv
+curvematch $files --U1range [-5,-45] --I1range [-0.2,-2.5] --nohello >curvematch.csv
 
 echo Plotting curves...
-curveplot data/*.dat --pairs --savepdf --nodisplay --xlabel 'Drain-Source Voltage' --ylabel 'Drain Current' --xylimit 60 --fontname Arial
+curveplot $files --pairs --savepdf --nodisplay --xlabel 'Drain-Source Voltage' --ylabel 'Drain Current' --xylimit 60 --fontname Arial
 mv *blue*.pdf plots/
 
 echo Generating HTML files...
