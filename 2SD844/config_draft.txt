@@ -1,7 +1,0 @@
-NPN BJT
-
-Vce 0..10 VDC
-Ic 0..6 A
-Ib 10...80 mA
-
-Vbe_sat @ Ic=0A is 0.65 V
