@@ -1,7 +1,0 @@
-PNB BJT
-
-Vce 0..10 VDC
-Ic 0..6 A
-Ib 50...250 mA
-
-Vbe_sat @ Ic=0A is 0.65 V
