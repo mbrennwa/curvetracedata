@@ -32,7 +32,7 @@ VEND   = 550
 VSTEP  = 5
 
 # Max. allowed current during the test:
-IMAX   = 0.2
+IMAX   = 0.15
 
 # Max. allowed power during the test:
 PMAX   = 50
