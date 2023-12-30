@@ -86,14 +86,15 @@ echo Plotting curves...
 # curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --fontname Arial
 # mv *blue*.pdf plots/
 
-curveplot data/2SJ28_16.dat --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --fontname Arial
+curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --fontname Arial
+mv *blue*.pdf plots/
 
 echo Generating HTML files...
 csvtotable parameters.csv parameters.html --caption "$DEVICENAME Parameters" --overwrite
 csvtotable curvematch.csv curvematch.html --caption "$DEVICENAME Curve Matching" --overwrite
 cp ../_tools/index_template.html ./
 mv index_template.html index.html
-sed -i 's/TEMPLATE/{$DEVICENAME}/g' index.html
+sed -i "s/TEMPLATE/$DEVICENAME/g" index.html
 
 echo Generating availability list...
 # list of non-NA data files:
