@@ -31,7 +31,6 @@ Available:
 2SK82_3.dat
 2SK82_40.dat
 2SK82_41.dat
-2SK82_42.dat
 2SK82_43.dat
 2SK82_44.dat
 2SK82_45.dat
@@ -50,12 +49,13 @@ Available:
 2SK82_57.dat
 2SK82_58.dat
 2SK82_59.dat
-2SK82_9.dat
 
 Not available:
 2SK82_11NA.dat
 2SK82_27NA.dat
+2SK82_42NA.dat
 2SK82_5NA.dat
 2SK82_6NA.dat
 2SK82_7NA.dat
 2SK82_8NA.dat
+2SK82_9NA.dat
