@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # check input arguments:
-if (($# < 13 || $# > 14))
+if (($# < 16 || $# > 16))
 then
 	echo "Usage of the proc.sh script:"
 	echo ""
-	echo "proc.sh <DEVICENAME> <XLABEL> <YLABEL> <XLIMIT> <YLIMIT> <XYLIMIT> <YSCALE> <U0> <I0> <U1> <U2> <I1> <I2> <VBE>"
+	echo "proc.sh <DEVICENAME> <XLABEL> <YLABEL> <XLIMIT> <YLIMIT> <XYLIMIT> <YSCALE> <WIDTH> <HEIGHT> <U0> <I0> <U1> <U2> <I1> <I2> <VBE>"
 	echo ""
 	echo "where:"
 	echo "   DEVICENAME: name of the DUT/device"
@@ -15,20 +15,13 @@ then
 	echo "   YLIMIT: y-axis limit for the curve plots"
 	echo "   XYLIMIT: x*y (power) limit for the curve plots"
 	echo "   YSCALE: y-axis scale ('0', 'm','mu', etc.)"
+	echo "   WIDTH: plot width"
+	echo "   HEIGHT: plot height"
 	echo "   U0 and I0: voltage/current value where the device parameters are determined (values in V and A)"
 	echo "   U1--U2 and I1--I2: voltage/current range used for curve matching (values in V and A)"
-	echo "   VBE (optional): if specified, data is processed assuming a BJT DUT with the specified Vbe voltage (positive value in V)"
+	echo "   VBE: if VBE > 0 data is processed assuming a BJT DUT with the specified Vbe voltage (value in V)"
 	exit 1
 fi
-
-if (($# == 14))
-then
-	BJT=true
-	VBE=${14}
-else
-	BJT=false
-fi
-
 
 DEVICENAME=$1
 XLABEL=$2
@@ -37,12 +30,15 @@ XLIMIT=$4
 YLIMIT=$5
 XYLIMIT=$6
 YSCALE=$7
-U0=$8
-I0=$9
-U1=${10}
-U2=${11}
-I1=${12}
-I2=${13}
+WIDTH=$8
+HEIGHT=$9
+U0=${10}
+I0=${11}
+U1=${12}
+U2=${13}
+I1=${14}
+I2=${15}
+VBE=${16}
 
 echo "DEVICENAME = $DEVICENAME"
 echo "XLABEL = $XLABEL"
@@ -51,13 +47,15 @@ echo "XLIMIT = $XLIMIT"
 echo "YLIMIT = $YLIMIT"
 echo "XYLIMIT = $XYLIMIT"
 echo "YSCALE = $YSCALE"
+echo "WIDTH = $WIDTH"
+echo "HEIGHT = $HEIGHT"
 echo "U0 = $U0"
 echo "I0 = $I0"
 echo "U1 = $U1"
 echo "U2 = $U2"
 echo "I1 = $I1"
 echo "I2 = $I2"
-if [[ "$BJT" == true ]]; then
+if [[ $VBE > 0 ]]; then
 	echo "VBE = $VBE"
 else
 	echo "not a BJT"
@@ -69,14 +67,14 @@ fi
 files=$(find data/*.dat -type f | sort)
 
 echo Calculating parameters...
-if [[ "$BJT" == true ]]; then
+if [[ $VBE > 0 ]]; then
 	curveprocess $files --U1I1 [$U0,$I0] --bjtvbe -$VBE --nohello >parameters.csv
 else
 	curveprocess $files --U1I1 [$U0,$I0] --nohello >parameters.csv
 fi
 
 echo Matching curves...
-if [[ "$BJT" == true ]]; then
+if [[ $VBE > 0 ]]; then
 	curvematch $files --U1range [$U1,$U2] --I1range [$I1,$I2] --bjtvbe -$VBE --nohello >curvematch.csv
 else
 	curvematch $files --U1range [$U1,$U2] --I1range [$I1,$I2] --nohello >curvematch.csv
@@ -86,7 +84,7 @@ echo Plotting curves...
 # curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --fontname Arial
 # mv *blue*.pdf plots/
 
-curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --fontname Arial
+curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname Arial
 mv *blue*.pdf plots/
 
 echo Generating HTML files...
