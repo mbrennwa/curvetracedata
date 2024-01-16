@@ -1,6 +1,6 @@
-################################################################
-# Test configuration DL98/3B4 DHT pentode in triode connection #
-################################################################
+############################################################
+# Test configuration DL94 DHT pentode in triode connection #
+############################################################
 
 
 # Connections:
@@ -8,7 +8,7 @@
 # - PSU1-BLK --> CATHODE(=FILAMENT-CENTER) + PSU2-RED
 # - PUS2-RED --> CATHODE + PSU1-BLK
 # - PSU2-BLK --> GRID (VIA GRID STOPPER RESISTOR)
-# - separate PSU for heater/filament (2.5/1.2 V and 165/330 mA)
+# - separate PSU for heater/filament (2.5/1.2 V and 25/50 mA)
 
 
 
@@ -24,27 +24,27 @@ POLARITY = 1
 VSTART = 0
 
 # Test voltage V1 end:
-VEND   = 135
+VEND   = 90
 
 # Test voltage V1 step:
-VSTEP  = 5
+VSTEP  = 3
 
 # Max. allowed current during the test:
-IMAX   = 0.030
+IMAX   = 0.012
 
 # Max. allowed power during the test:
-PMAX   = 3
+PMAX   = 1
 
 # Idle conditions for pre-heat and idle between readings are configured to fixed values (PSU2 output will be regulated to attain these values, see below):
 
 # - Idle voltage (will be set as voltage limit at PSU-1 during idling):
-VIDLE  = 90
+VIDLE  = 75
 
 #   (no min. or max. idle voltage is specified, which tells the program to use a fixed V1 idle voltage)
 
 # - Idle current, which is the target value to be attained with PSU-2 regulation
 #   (make sure this is lower and not too close to IMAX):
-IIDLE  = 0.02
+IIDLE  = 0.010
 
 
 
@@ -60,10 +60,10 @@ POLARITY = -1
 VSTART = 0.0
 
 # Test voltage V2 end:
-VEND   = 30
+VEND   = 9
 
 # Test voltage V2 step:
-VSTEP  = 5
+VSTEP  = 1
 
 # Max. allowed current during the test is 1 A (this is way more than necessary for the DUT, but a larger value helps achieving quick regulation of the PSU output):
 IMAX   = 1
@@ -74,17 +74,17 @@ PMAX   = 5
 # Idle conditions configured such that PSU-2 regulates the idle conditions configured for PSU-1
 
 # - V2 start value:
-VIDLE     = 10.0
+VIDLE     = 6.0
 
 # - V2 minimum value:
 VIDLE_MIN = 0.0
 
 # - V2 maximum value:
-VIDLE_MAX = 15.0
+VIDLE_MAX = 8.0
 
 # - The DUT transconductance value (in A/V) to be used for regulation of the I1 idle current by adjusting the V2 voltage:
 #   (IDLE_GM = delta-I1 / delta-U2 ratio of the DUT at the idle point)
-IDLE_GM   = -0.002
+IDLE_GM   = -0.0015
 
 # - Max. allowed idle current during the test is 1 A (this is way more than necessary for the DUT, but a larger value helps achieving quick regulation of the PSU output):
 IIDLE     = 1
