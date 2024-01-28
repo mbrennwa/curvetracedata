@@ -60,7 +60,7 @@ POLARITY = -1
 VSTART = 0.0
 
 # Test voltage V2 end:
-VEND   = 70
+VEND   = 45
 
 # Test voltage V2 step:
 VSTEP  = 5
