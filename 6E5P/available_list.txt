@@ -16,16 +16,12 @@ Available:
 6E5P_23.dat
 6E5P_24.dat
 6E5P_25.dat
-6E5P_26.dat
 6E5P_27.dat
 6E5P_28.dat
-6E5P_29.dat
 6E5P_2.dat
 6E5P_30.dat
-6E5P_31.dat
 6E5P_32.dat
 6E5P_33.dat
-6E5P_34.dat
 6E5P_35.dat
 6E5P_36.dat
 6E5P_3.dat
@@ -37,3 +33,7 @@ Available:
 6E5P_9.dat
 
 Not available:
+6E5P_26_reserved_NA.dat
+6E5P_29_reserved_NA.dat
+6E5P_31_reserved_NA.dat
+6E5P_34_reserved_NA.dat
