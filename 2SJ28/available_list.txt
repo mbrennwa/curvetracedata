@@ -10,8 +10,6 @@ Available:
 2SJ28_20.dat
 2SJ28_21.dat
 2SJ28_22.dat
-2SJ28_23.dat
-2SJ28_24.dat
 2SJ28_25.dat
 2SJ28_26.dat
 2SJ28_2.dat
@@ -26,4 +24,6 @@ Not available:
 2SJ28_13NA.dat
 2SJ28_18NA.dat
 2SJ28_1NA.dat
+2SJ28_23NA.dat
+2SJ28_24NA.dat
 2SJ28_6NA.dat
