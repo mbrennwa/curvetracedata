@@ -18,4 +18,16 @@ cp ../_tools/index_template.html ./
 mv index_template.html index.html
 sed -i 's/TEMPLATE/LD1014/g' index.html
 
+echo Generating availability list...
+# list of non-NA data files:
+rm available_list.txt 2> /dev/null
+touch available_list.txt
+files=$(find data/*.dat -type f -not -name "*NA*.dat" | sort)
+echo 'Available:' > available_list.txt
+for f in $files; do echo ${f#*/} >>available_list.txt; done
+files=$(find data/*NA*.dat -type f | sort)
+echo '' >>available_list.txt
+echo 'Not available:' >>available_list.txt
+for f in $files; do echo ${f#*/} >>available_list.txt; done
+
 echo Done.
