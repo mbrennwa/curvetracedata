@@ -22,7 +22,7 @@ POLARITY = 1
 VSTART = 0
 
 # Test voltage V1 end:
-VEND   = 40
+VEND   = 16
 
 # Test voltage V1 steps:
 VSTEP  = 2
@@ -31,18 +31,18 @@ VSTEP  = 2
 IMAX   = 10.0
 
 # Max. allowed power during the test:
-PMAX   = 100
+PMAX   = 20
 
 # Idle conditions for pre-heat and idle between readings are configured to fixed values (PSU2 output will be regulated to attain these values, see below):
 
 # - Idle voltage (will be set as voltage limit at PSU-1 during idling):
-VIDLE  = 20
+VIDLE  = 10
 
 #   (no min. or max. idle voltage is specified, which tells the program to use a fixed V1 idle voltage)
 
 # - Idle current is (the target value to be attained with PSU-2 regulation)
 #   (make sure this is lower and not too close to IMAX):
-IIDLE  = 1.6
+IIDLE  = 1.8
 
 
 
@@ -55,13 +55,13 @@ IIDLE  = 1.6
 POLARITY = 1
 
 # Test voltage V2 start:
-VSTART = 0
+VSTART = 1
 
 # Test voltage V2 end:
 VEND   = 2
 
 # Test voltage V2 steps:
-VSTEP  = 0.2
+VSTEP  = 0.25
 
 # Max. allowed current during the test is 1 A (this is way more than necessary for the DUT, but a larger value helps achieving quick regulation of the PSU output):
 IMAX   = 1
@@ -72,20 +72,20 @@ PMAX   = 5
 # Idle conditions configured such that PSU-2 regulates the idle conditions configured for PSU-1
 
 # - V2 start value:
-VIDLE     = 0.5
+VIDLE     = 1.4
 
 # - V2 minimum value:
 VIDLE_MIN = 0
 
 # - V2 maximum value:
-VIDLE_MAX = 2
+VIDLE_MAX = 3
 
 # - The DUT transconductance value (in A/V) to be used for regulation of the I1 idle current by adjusting the V2 voltage:
 #   (IDLE_GM = delta-I1 / delta-U2 ratio of the DUT at the idle point)
-IDLE_GM   = 20
+IDLE_GM   = 3
 
 # - Max. allowed idle current during the test is 1 A (this is way more than necessary for the DUT, but a larger value helps achieving quick regulation of the PSU output):
-IIDLE     = 1
+IIDLE     = 5
 
 
 
@@ -102,7 +102,7 @@ T_TOL    = 0.5
 
 # Duration of idle periods between readings (seconds):
 ### IDLESECS    = 0.1 not needed with heaterblock
-IDLESECS    = 0.0
+IDLESECS    = 0.5
 
 
 # Duration of pre-heat / warmup period before starting the test (seconds):

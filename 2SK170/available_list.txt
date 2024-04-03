@@ -1,0 +1,7 @@
+Available:
+2SK240_1A.dat
+2SK240_1B.dat
+2SK240_2A.dat
+2SK240_2B.dat
+
+Not available:
