@@ -1,0 +1,9 @@
+Available:
+SJEP120R100_1.dat
+SJEP120R100_2.dat
+SJEP120R100_3.dat
+SJEP120R100_4.dat
+SJEP120R100_5.dat
+SJEP120R100_6.dat
+
+Not available:
