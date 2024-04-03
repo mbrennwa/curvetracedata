@@ -40,6 +40,8 @@ I1=${14}
 I2=${15}
 VBE=${16}
 
+FONTNAME="Adventure Island"
+
 echo "DEVICENAME = $DEVICENAME"
 echo "XLABEL = $XLABEL"
 echo "YLABEL = $YLABEL"
@@ -81,10 +83,10 @@ else
 fi
 
 echo Plotting curves...
-# curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --fontname Arial
+# curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --fontname $FONTNAME
 # mv *blue*.pdf plots/
 
-curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname Arial
+curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
 mv *blue*.pdf plots/
 
 echo Generating HTML files...
