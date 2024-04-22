@@ -40,7 +40,12 @@ I1=${14}
 I2=${15}
 VBE=${16}
 
-FONTNAME="Adventure Island"
+### FONTNAME="Adventure Island"
+### FONTNAME="Comodo Free"
+
+### for use of National Park font, use the fontname.py tool and change the font name to NationalPark
+### https://github.com/chrissimpkins/fontname.py
+FONTNAME="NationalPark"
 
 echo "DEVICENAME = $DEVICENAME"
 echo "XLABEL = $XLABEL"
