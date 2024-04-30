@@ -45,7 +45,9 @@ VBE=${16}
 
 ### for use of National Park font, use the fontname.py tool and change the font name to NationalPark
 ### https://github.com/chrissimpkins/fontname.py
-FONTNAME="NationalPark"
+### FONTNAME="NationalPark"
+
+FONTNAME="SF Pro Rounded"
 
 echo "DEVICENAME = $DEVICENAME"
 echo "XLABEL = $XLABEL"
