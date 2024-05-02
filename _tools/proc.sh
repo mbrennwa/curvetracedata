@@ -47,7 +47,9 @@ VBE=${16}
 ### https://github.com/chrissimpkins/fontname.py
 ### FONTNAME="NationalPark"
 
-FONTNAME="SF Pro Rounded"
+### FONTNAME="SF Pro Rounded"
+
+FONTNAME="Open Runde"
 
 echo "DEVICENAME = $DEVICENAME"
 echo "XLABEL = $XLABEL"
