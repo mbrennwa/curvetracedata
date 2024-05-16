@@ -98,10 +98,8 @@ else
 fi
 
 echo Plotting curves...
-# curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --fontname $FONTNAME
-# mv *blue*.pdf plots/
 
-curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
+curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
 mv *blue*.pdf plots/
 
 echo Generating HTML files...

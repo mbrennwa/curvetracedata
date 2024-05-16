@@ -1,22 +1,16 @@
 #!/bin/bash
 
-files=$(find data/*.dat -type f -not -name "*NA*.dat" | sort)
+# DEVICENAME: name of the DUT/device"
+# XLABEL: x-axis label for the curve plots"
+# YLABEL: y-axis label for the curve plots"
+# XLIMIT: x-axis limit for the curve plots"
+# YLIMIT: y-axis limit for the curve plots"
+# XYLIMIT: x*y (power) limit for the curve plots"
+# YSCALE: y-axis scale ('0', 'm','mu', etc.)"
+# WIDTH: plot width"
+# HEIGHT: plot height"
+# U0 and I0: voltage/current value where the device parameters are determined (values in V and A)"
+# U1--U2 and I1--I2: voltage/current range used for curve matching (values in V and A)"
+# VBE: if VBE > 0 data is processed assuming a BJT DUT with the specified Vbe voltage (value in V)"
 
-echo Calculating parameters...
-curveprocess $files --U1I1 [25,1.8] --nohello >parameters.csv
-
-echo Matching curves...
-curvematch $files --U1range [5,45] --I1range [0.2,3.5] --nohello >curvematch.csv
-
-echo Plotting curves...
-curveplot $files --pairs --savepdf --nodisplay --xlabel 'DRAIN-SOURCE VOLTAGE' --ylabel 'DRAIN CURRENT' --xylimit 100 --fontname Arial
-mv *blue*.pdf plots/
-
-echo Generating HTML files...
-csvtotable parameters.csv parameters.html --caption "THF51 Parameters" --overwrite
-csvtotable curvematch.csv curvematch.html --caption "THF51 Curve Matching" --overwrite
-cp ../_tools/index_template.html ./
-mv index_template.html index.html
-sed -i 's/TEMPLATE/THF51/g' index.html
-
-echo Done.
+../_tools/proc.sh 'THF51' 'DRAIN-SOURCE VOLTAGE' 'DRAIN CURRENT' 60 5.5 100 0 12 6 25 1.8 5 45 0.2 3.5 0
