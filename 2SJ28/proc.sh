@@ -13,5 +13,5 @@
 # U1--U2 and I1--I2: voltage/current range used for curve matching (values in V and A)"
 # VBE: if VBE > 0 data is processed assuming a BJT DUT with the specified Vbe voltage (value in V)"
 
-../_tools/proc.sh 2SJ28 'Drain-Source Voltage' 'Drain Current' -60 -5 60 0 10 6 -20 -1.6 -5 -45 -0.2 -2.5 0
+../_tools/proc.sh 2SJ28 'DRAIN-SOURCE VOLTAGE' 'DRAIN CURRENT' -60 -5 60 0 10 6 -20 -1.6 -5 -45 -0.2 -2.5 0
 
