@@ -13,4 +13,4 @@
 # U1--U2 and I1--I2: voltage/current range used for curve matching (values in V and A)"
 # VBE: if VBE > 0 data is processed assuming a BJT DUT with the specified Vbe voltage (value in V)"
 
-../_tools/proc.sh 6N30P 'ANODE-CATHODE VOLTAGE' 'ANODE CURRENT' 250 0.05 4 m 14 6 150 0.03 200 250 0.005 0.04 0
+../_tools/proc.sh '6N30P / 6H30pi' 'ANODE-CATHODE VOLTAGE' 'ANODE CURRENT' 250 0.05 4 m 14 6 150 0.03 200 250 0.005 0.04 0

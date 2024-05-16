@@ -109,7 +109,7 @@ csvtotable parameters.csv parameters.html --caption "$DEVICENAME Parameters" --o
 csvtotable curvematch.csv curvematch.html --caption "$DEVICENAME Curve Matching" --overwrite
 cp ../_tools/index_template.html ./
 mv index_template.html index.html
-sed -i "s/TEMPLATE/$DEVICENAME/g" index.html
+sed -i "s%TEMPLATE%$DEVICENAME%g" index.html
 DEVICEDIR=$(basename $PWD)
 sed -i "s/TMPLATPLOTS/$DEVICEDIR/g" index.html
 
