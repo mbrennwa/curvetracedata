@@ -110,6 +110,8 @@ csvtotable curvematch.csv curvematch.html --caption "$DEVICENAME Curve Matching"
 cp ../_tools/index_template.html ./
 mv index_template.html index.html
 sed -i "s/TEMPLATE/$DEVICENAME/g" index.html
+DEVICEDIR=$(basename $PWD)
+sed -i "s/TMPLATPLOTS/$DEVICEDIR/g" index.html
 
 echo Generating availability list...
 # list of non-NA data files:
