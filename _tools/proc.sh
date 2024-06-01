@@ -98,10 +98,8 @@ else
 fi
 
 echo Plotting curves...
-# curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --fontname $FONTNAME
-# mv *blue*.pdf plots/
 
-curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
+curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
 mv *blue*.pdf plots/
 
 echo Generating HTML files...
@@ -109,7 +107,7 @@ csvtotable parameters.csv parameters.html --caption "$DEVICENAME Parameters" --o
 csvtotable curvematch.csv curvematch.html --caption "$DEVICENAME Curve Matching" --overwrite
 cp ../_tools/index_template.html ./
 mv index_template.html index.html
-sed -i "s/TEMPLATE/$DEVICENAME/g" index.html
+sed -i "s%TEMPLATE%$DEVICENAME%g" index.html
 DEVICEDIR=$(basename $PWD)
 sed -i "s/TMPLATPLOTS/$DEVICEDIR/g" index.html
 
