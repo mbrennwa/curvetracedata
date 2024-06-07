@@ -104,8 +104,11 @@ fi
 
 echo Plotting curves...
 
-curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
-mv *blue*.pdf plots/
+cd plots
+curveplot ../$files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
+### mv *blue*.pdf plots/
+cd ..
+
 
 echo Generating HTML files...
 csvtotable parameters.csv parameters.html --caption "$DEVICENAME Parameters" --overwrite
