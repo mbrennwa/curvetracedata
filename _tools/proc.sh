@@ -45,7 +45,12 @@ VBE=${16}
 
 ### for use of National Park font, use the fontname.py tool and change the font name to NationalPark
 ### https://github.com/chrissimpkins/fontname.py
-FONTNAME="NationalPark"
+### FONTNAME="NationalPark"
+
+### FONTNAME="AVHershey Simplex"
+
+FONTNAME="Arial"
+
 
 ### FONTNAME="SF Pro Rounded"
 
@@ -99,8 +104,11 @@ fi
 
 echo Plotting curves...
 
-curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
-mv *blue*.pdf plots/
+cd plots
+curveplot ../$files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
+### mv *blue*.pdf plots/
+cd ..
+
 
 echo Generating HTML files...
 csvtotable parameters.csv parameters.html --caption "$DEVICENAME Parameters" --overwrite
