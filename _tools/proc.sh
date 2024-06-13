@@ -104,10 +104,8 @@ fi
 
 echo Plotting curves...
 
-cd plots
-curveplot ../$files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
-### mv *blue*.pdf plots/
-cd ..
+curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
+mv *blue*.pdf plots/
 
 
 echo Generating HTML files...
