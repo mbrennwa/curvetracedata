@@ -3,7 +3,7 @@ VT25_10.dat
 VT25_11.dat
 VT25_12.dat
 VT25_1.dat
-VT25_2.dat
+VT25_3.dat
 VT25_4.dat
 VT25_5.dat
 VT25_6.dat
@@ -12,4 +12,4 @@ VT25_8.dat
 VT25_9.dat
 
 Not available:
-VT25_3_dead_NA.dat
+VT25_2_deadfilament_NA.dat
