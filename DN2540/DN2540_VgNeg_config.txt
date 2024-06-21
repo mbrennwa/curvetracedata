@@ -59,10 +59,10 @@ POLARITY = -1
 VSTART = 2.0
 
 # Test voltage V2 end:
-VEND   = 0
+VEND   = 1.2
 
 # Test voltage V2 steps:
-VSTEP  = 0.2
+VSTEP  = 0.1
 
 # Max. allowed current during the test is 1 A (this is way more than necessary for the DUT, but a larger value helps achieving quick regulation of the PSU output):
 IMAX   = 1
@@ -102,7 +102,7 @@ T_TOL    = 1.0
 
 
 # Duration of idle periods between readings (seconds):
-### IDLESECS    = 0.1 not needed with heaterblock
+### IDLESECS    = 0
 IDLESECS    = 2.0
 
 

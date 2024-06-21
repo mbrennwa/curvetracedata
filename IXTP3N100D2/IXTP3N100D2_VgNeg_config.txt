@@ -73,17 +73,17 @@ PMAX   = 5
 # Idle conditions configured such that PSU-2 regulates the idle conditions configured for PSU-1
 
 # - V2 start value:
-VIDLE     = 2.8
+VIDLE     = 4
 
 # - V2 minimum value:
 VIDLE_MIN = 0
 
 # - V2 maximum value:
-VIDLE_MAX = 3
+VIDLE_MAX = 6
 
 # - The DUT transconductance value (in A/V) to be used for regulation of the I1 idle current by adjusting the V2 voltage:
 #   (IDLE_GM = delta-I1 / delta-U2 ratio of the DUT at the idle point)
-IDLE_GM   = -0.1
+IDLE_GM   = -0.4
 
 # - Max. allowed idle current during the test is 1 A (this is way more than necessary for the DUT, but a larger value helps achieving quick regulation of the PSU output):
 IIDLE     = 1
@@ -102,7 +102,7 @@ T_TOL    = 1.0
 
 
 # Duration of idle periods between readings (seconds):
-### IDLESECS    = 0.1 not needed with heaterblock
+IDLESECS    = 0
 ### IDLESECS    = 2.0
 
 
