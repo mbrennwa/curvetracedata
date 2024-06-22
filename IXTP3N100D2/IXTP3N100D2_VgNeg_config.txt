@@ -26,7 +26,7 @@ VSTART = 0
 VEND   = 200
 
 # Test voltage V1 steps:
-VSTEP  = 5
+VSTEP  = 10
 
 # Max. allowed current during the test:
 IMAX   = 3
@@ -56,10 +56,10 @@ IIDLE  = 0.02
 POLARITY = -1
 
 # Test voltage V2 start:
-VSTART = 3
+VSTART = 2.4
 
 # Test voltage V2 end:
-VEND   = 1.8
+VEND   = 3
 
 # Test voltage V2 steps:
 VSTEP  = 0.2
@@ -103,7 +103,7 @@ T_TOL    = 1.0
 
 # Duration of idle periods between readings (seconds):
 ### IDLESECS    = 0
-IDLESECS    = 2.0
+IDLESECS    = 1.0
 
 
 # Duration of pre-heat / warmup period before starting the test (seconds):
