@@ -13,4 +13,4 @@
 # U1--U2 and I1--I2: voltage/current range used for curve matching (values in V and A)"
 # VBE: if VBE > 0 data is processed assuming a BJT DUT with the specified Vbe voltage (value in V)"
 
-../_tools/proc.sh 'DN2540' 'GATE-SOURCE VOLTAGE' 'DRAIN CURRENT' 20 0.1 20 m 10 6 5 0.02 0 20 0.0 0.1 0
+../_tools/proc.sh 'DN2540' 'GATE-SOURCE VOLTAGE' 'DRAIN CURRENT' 20 0.1 20 m 10 6 3 0.02 0 20 0.0 0.1 0

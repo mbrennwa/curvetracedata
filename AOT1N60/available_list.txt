@@ -1,5 +1,4 @@
 Available:
 AOT1N60_1.dat
-AOT1N60_2.dat
 
 Not available:
