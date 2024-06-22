@@ -1,2 +1,2 @@
 Filename, Sample, U1 (V), I1 (A), Ug (V), gm (A/V), go (A/V), μ (V/V), T (°C)
-DL96_1, DL96_1, 50, 0.008, nan, nan, nan, nan, NA
+DL96_1, DL96_1, 50, 0.004, -2.866, 0.001579, 0.000203, 7.781, NA
