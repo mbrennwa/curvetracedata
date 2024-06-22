@@ -22,10 +22,10 @@ POLARITY = 1
 VSTART = 0
 
 # Test voltage V1 end:
-VEND   = 20
+VEND   = 15
 
 # Test voltage V1 steps:
-VSTEP  = 1
+VSTEP  = 0.25
 
 # Max. allowed current during the test:
 IMAX   = 0.9
