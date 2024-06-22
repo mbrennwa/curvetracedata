@@ -1,4 +1,5 @@
 Available:
-DN2540_VGneg_1.dat
+DN2540_1.dat
+DN2540_2.dat
 
 Not available:
