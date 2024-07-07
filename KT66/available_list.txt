@@ -1,5 +1,12 @@
 Available:
+KT66_10.dat
+KT66_27.dat
 KT66_28.dat
+KT66_29.dat
+KT66_30.dat
+KT66_31.dat
+KT66_33.dat
 KT66_34.dat
+KT66_9.dat
 
 Not available:
