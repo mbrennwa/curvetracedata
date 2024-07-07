@@ -1,0 +1,3 @@
+#!/bin/bash
+s
+../_tools/proc.sh KT66 'Anode-Cathode Voltage' 'Anode Current' 500 0.2 40 m 14 6 350 0.04 0 450 0.0 0.15 0
