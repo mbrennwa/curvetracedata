@@ -11,7 +11,6 @@ Available:
 2SB716_19.dat
 2SB716_1.dat
 2SB716_20.dat
-2SB716_21.dat
 2SB716_2.dat
 2SB716_3.dat
 2SB716_4.dat
