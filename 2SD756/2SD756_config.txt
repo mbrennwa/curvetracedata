@@ -1,5 +1,5 @@
 #################################
-# Test configuration 2SD256 BJT #
+# Test configuration 2SD756 NPN #
 # with Rb = 1M base resistor    #
 # as Ib current source          #
 #################################
