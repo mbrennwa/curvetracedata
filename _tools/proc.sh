@@ -90,21 +90,25 @@ files=$(find data/*.dat -type f | sort)
 
 echo Calculating parameters...
 if [[ $VBE > 0 ]]; then
-	curveprocess $files --U1I1 [$U0,$I0] --bjtvbe -$VBE --nohello >parameters.csv
+	curveprocess $files --U1I1 [$U0,$I0] --bjtvbe $VBE --nohello >parameters.csv
 else
 	curveprocess $files --U1I1 [$U0,$I0] --nohello >parameters.csv
 fi
 
 echo Matching curves...
 if [[ $VBE > 0 ]]; then
-	curvematch $files --U1range [$U1,$U2] --I1range [$I1,$I2] --bjtvbe -$VBE --nohello >curvematch.csv
+	curvematch $files --U1range [$U1,$U2] --I1range [$I1,$I2] --bjtvbe $VBE --nohello >curvematch.csv
 else
 	curvematch $files --U1range [$U1,$U2] --I1range [$I1,$I2] --nohello >curvematch.csv
 fi
 
 echo Plotting curves...
 
-curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
+if [[ $VBE > 0 ]]; then
+	curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME" --bjtvbe $VBE
+else
+	curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
+fi
 mv *blue*.pdf plots/
 
 
