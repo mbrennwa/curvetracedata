@@ -1,6 +1,13 @@
 Available:
+2SC1775_10.dat
 2SC1775_1.dat
 2SC1775_2.dat
 2SC1775_3.dat
+2SC1775_4.dat
+2SC1775_5.dat
+2SC1775_6.dat
+2SC1775_7.dat
+2SC1775_8.dat
+2SC1775_9.dat
 
 Not available:
