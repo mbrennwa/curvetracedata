@@ -1,0 +1,4 @@
+Filename-1, Sample-1, Filename-2, Sample-2, U1_range_low (V), U1_range_high (V), I1_range_low (A), I1_range_high (A), delta-Ib (A-RMS), delta-Ib mean subtracted (A-RMS)
+2SC1775_1, 2SC1775_1, 2SC1775_2, 2SC1775_2, 0, 12, 0.001, 0.01, 9.735e-07, 8.82e-07
+2SC1775_1, 2SC1775_1, 2SC1775_3, 2SC1775_3, 0, 12, 0.001, 0.01, 1.587e-06, 1.118e-06
+2SC1775_2, 2SC1775_2, 2SC1775_3, 2SC1775_3, 0, 12, 0.001, 0.01, 9.281e-07, 5.958e-07

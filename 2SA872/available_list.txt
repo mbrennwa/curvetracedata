@@ -1,0 +1,13 @@
+Available:
+2SA872_10.dat
+2SA872_1.dat
+2SA872_2.dat
+2SA872_3.dat
+2SA872_4.dat
+2SA872_5.dat
+2SA872_6.dat
+2SA872_7.dat
+2SA872_8.dat
+2SA872_9.dat
+
+Not available:
