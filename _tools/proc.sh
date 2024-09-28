@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # check input arguments:
-if (($# < 16 || $# > 16))
+if (($# < 16 || $# > 17))
 then
 	echo "Usage of the proc.sh script:"
 	echo ""
@@ -39,6 +39,7 @@ U2=${13}
 I1=${14}
 I2=${15}
 VBE=${16}
+CSCALE=${17:-1}
 
 ### FONTNAME="Adventure Island"
 ### FONTNAME="Comodo Free"
@@ -82,6 +83,7 @@ if [[ $VBE > 0 ]]; then
 else
 	echo "not a BJT"
 fi
+echo "CSCALE = $CSCALE"
 
 # exit 0
 
@@ -105,9 +107,9 @@ fi
 echo Plotting curves...
 
 if [[ $VBE > 0 ]]; then
-	curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME" --bjtvbe $VBE
+	curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME" --cscale $CSCALE --bjtvbe $VBE
 else
-	curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME"
+	curveplot $files --pairs --savepdf --nodisplay --xlabel "$XLABEL" --ylabel "$YLABEL" --xlimit $XLIMIT --ylimit $YLIMIT --xylimit $XYLIMIT --yscale $YSCALE --width $WIDTH --height $HEIGHT --fontname "$FONTNAME" --cscale $CSCALE
 fi
 mv *blue*.pdf plots/
 
