@@ -7,6 +7,9 @@ Available:
 801A_6.dat
 801A_7.dat
 801A_8.dat
+VT62_10.dat
+VT62_11.dat
+VT62_12.dat
 VT62_1.dat
 VT62_2.dat
 VT62_3.dat
@@ -15,5 +18,6 @@ VT62_5.dat
 VT62_6.dat
 VT62_7.dat
 VT62_8.dat
+VT62_9.dat
 
 Not available:
