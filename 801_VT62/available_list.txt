@@ -22,10 +22,10 @@ VT62_1.dat
 VT62_2.dat
 VT62_3.dat
 VT62_4.dat
-VT62_5.dat
 VT62_6.dat
 VT62_7.dat
 VT62_8.dat
 VT62_9.dat
 
 Not available:
+VT62_5_NA.dat
