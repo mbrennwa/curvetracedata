@@ -18,6 +18,8 @@ VT62_14.dat
 VT62_15.dat
 VT62_16.dat
 VT62_17.dat
+VT62_18.dat
+VT62_19.dat
 VT62_1.dat
 VT62_2.dat
 VT62_3.dat
