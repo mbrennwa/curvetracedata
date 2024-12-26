@@ -1,4 +1,4 @@
-% * Sample: 300B_Svetlana_10
+% * Sample: 300B_Svetlana_10_halfFilamentDead
 % * Date / time: 2023-12-30 17:54:31.863779
 % * R2CONTROL =  NOT SPECIFIED
 % Column 1:  PSU1 nominal voltage setting (V)
