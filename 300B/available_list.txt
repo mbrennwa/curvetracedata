@@ -5,7 +5,6 @@ Available:
 300B_EHX_15.dat
 300B_EHX_16.dat
 300B_EHX_17.dat
-300B_Svetlana_10.dat
 300B_Svetlana_11.dat
 300B_Svetlana_5.dat
 300B_Svetlana_6.dat
