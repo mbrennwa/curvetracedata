@@ -21,6 +21,8 @@ VT62_17.dat
 VT62_18.dat
 VT62_19.dat
 VT62_1.dat
+VT62_20.dat
+VT62_21.dat
 VT62_2.dat
 VT62_3.dat
 VT62_4.dat
