@@ -7,13 +7,9 @@ EL34_14.dat
 EL34_15.dat
 EL34_16.dat
 EL34_1.dat
-EL34_1-old.dat
 EL34_2.dat
-EL34_2-old.dat
 EL34_3.dat
-EL34_3-old.dat
 EL34_4.dat
-EL34_4-old.dat
 EL34_5.dat
 EL34_6.dat
 EL34_7.dat
