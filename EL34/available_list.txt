@@ -1,11 +1,4 @@
 Available:
-EL34_10.dat
-EL34_11.dat
-EL34_12.dat
-EL34_13.dat
-EL34_14.dat
-EL34_15.dat
-EL34_16.dat
 EL34_1.dat
 EL34_2.dat
 EL34_3.dat
@@ -14,6 +7,13 @@ EL34_5.dat
 EL34_6.dat
 EL34_7.dat
 EL34_8.dat
-EL34_9.dat
 
 Not available:
+EL34_10_NA.dat
+EL34_11_NA.dat
+EL34_12_NA.dat
+EL34_13_NA.dat
+EL34_14_NA.dat
+EL34_15_NA.dat
+EL34_16_NA.dat
+EL34_9_NA.dat
