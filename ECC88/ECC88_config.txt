@@ -63,7 +63,7 @@ VSTART = 0.0
 VEND   = 5
 
 # Test voltage V2 step:
-VSTEP  = 1
+VSTEP  = 0.5
 
 # Max. allowed current during the test is 1 A (this is way more than necessary for the DUT, but a larger value helps achieving quick regulation of the PSU output):
 IMAX   = 1
