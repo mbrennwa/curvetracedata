@@ -45,6 +45,14 @@ ECC88_8A.dat
 ECC88_8B.dat
 ECC88_9A.dat
 ECC88_9B.dat
+ECC88_CCa_28A.dat
+ECC88_CCa_28B.dat
+ECC88_CCa_29A.dat
+ECC88_CCa_29B.dat
+ECC88_CCa_30A.dat
+ECC88_CCa_30B.dat
+ECC88_CCa_31A.dat
+ECC88_CCa_31B.dat
 
 Not available:
 ECC88_1A_NA.dat
