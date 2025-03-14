@@ -1,5 +1,13 @@
 Available:
+20B_10.dat
 20B_1.dat
 20B_2.dat
+20B_3.dat
+20B_4.dat
+20B_5.dat
+20B_6.dat
+20B_7.dat
+20B_8.dat
+20B_9.dat
 
 Not available:
