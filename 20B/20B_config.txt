@@ -5,8 +5,8 @@
 
 # Connections:
 # - PSU1-RED --> ANODE
-# - PSU1-BLK --> CATHODE (filament center) + PSU2-RED
-# - PUS2-RED --> CATHODE (filament center) + PSU1-BLK
+# - PSU1-BLK --> CATHODE (filament center if available) + PSU2-RED
+# - PUS2-RED --> CATHODE (filament center if available) + PSU1-BLK
 # - PSU2-BLK --> GRID (VIA GRID STOPPER RESISTOR)
 # - separate PSU for heater/filament (5 V / 1.4 A)
 
