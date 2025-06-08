@@ -1,7 +1,7 @@
 Available:
+801A_1.dat
 801A_10.dat
 801A_11.dat
-801A_1.dat
 801A_2.dat
 801A_3.dat
 801A_4.dat
@@ -10,6 +10,7 @@ Available:
 801A_7.dat
 801A_8.dat
 801A_9.dat
+VT62_1.dat
 VT62_10.dat
 VT62_11.dat
 VT62_12.dat
@@ -20,14 +21,17 @@ VT62_16.dat
 VT62_17.dat
 VT62_18.dat
 VT62_19.dat
-VT62_1.dat
+VT62_2.dat
 VT62_20.dat
 VT62_21.dat
 VT62_22.dat
 VT62_23.dat
 VT62_24.dat
 VT62_25.dat
-VT62_2.dat
+VT62_26.dat
+VT62_27-FILAMENTINVERTEDPOLARITY.dat
+VT62_27.dat
+VT62_27_FILAMENTPOLARITYREVERSED-2.dat
 VT62_3.dat
 VT62_4.dat
 VT62_6.dat
